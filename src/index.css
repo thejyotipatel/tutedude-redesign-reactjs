@@ -1,13 +1,275 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+:root {
+  --clr-accent-100: #ffffff;
+  --clr-accent-200: #e5e5e5;
+  --clr-accent-300: #d9d9d940;
+
+  --clr-primary-100: #800080;
+  --clr-primary-200: #eeaeae;
+  --clr-primary-300: #80008040;
+
+  --clr-neutral-100: #000000;
+  --clr-neutral-200: #555454;
+  --clr-neutral-300: #4d4d4d;
+  --clr-neutral-400: #887f78;
+  --clr-neutral-500: #c5c5c5;
+
+  --ff-primery: 'Poppins', sans-serif;
+
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semi-bold: 600;
+  --fw-bold: 700;
+
+  --fs-100: 14px;
+  --fs-200: 16px;
+  --fs-300: 24px;
+  --fs-400: 32px;
+
+  --ions-size: 32px;
+
+  --fs-body: calc(10px + 2vmin);
+
+  --ts-400: all 0.2s linear;
+
+  --size-100: 0.5em;
+  --size-200: 1em;
+  --size-300: 1.5rem;
+  --size-400: 2rem;
+  --size-500: 2.5rem;
+  --size-600: 3rem;
+  --size-700: 3.5rem;
+  --size-800: 4rem;
+  --size-900: 5rem;
+
+  --lg-color: linear-gradient(270deg, #800080 0%, #ff864c 100%);
+
+  --boxs-100: 0px 2px 8px #80008026;
+  --boxs-200: 0px 3px 100px #0000001a;
+
+  --br-card-100: 10px;
+  --br-card-200: 20px;
+
+  --card-w: 358px;
+  --card-h: 228px;
+  --br-card-100: 10px;
+  --br-card-200: 20px;
+
+  --d-border: 2px solid hotpink;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* utility classes */
+
+/* txt color */
+
+/* txt primary */
+.txt-primary-100 {
+  color: var(--clr-primary-100);
+}
+.txt-primary-200 {
+  color: var(--clr-primary-200);
+}
+.txt-primary-300 {
+  color: var(--clr-primary-300);
+}
+
+/* txt accent */
+.txt-accent-100 {
+  color: var(--clr-accent-100);
+}
+.txt-accent-200 {
+  color: var(--clr-accent-200);
+}
+.txt-accent-300 {
+  color: var(--clr-accent-300);
+}
+
+/* txt neutral */
+.txt-neutral-100 {
+  color: var(--clr-neutral-100);
+}
+.txt-neutral-200 {
+  color: var(--clr-neutral-200);
+}
+
+.txt-neutral-300 {
+  color: var(--clr-neutral-300);
+}
+
+.txt-neutral-400 {
+  color: var(--clr-neutral-400);
+}
+.txt-neutral-500 {
+  color: var(--clr-neutral-500);
+}
+
+/* background color */
+
+/* background primary */
+.bg-primary-100 {
+  background-color: var(--clr-primary-100);
+}
+.bg-primary-300 {
+  background-color: var(--clr-primary-300);
+}
+
+/* background accent */
+.bg-accent-100 {
+  background-color: var(--clr-accent-100);
+}
+.bg-accent-200 {
+  background-color: var(--clr-accent-200);
+}
+.bg-accent-300 {
+  background-color: var(--clr-accent-300);
+}
+
+/* font-weight */
+.fw-regular {
+  font-weight: var(--fw-regular);
+}
+.fw-medium {
+  font-weight: var(--fw-medium);
+}
+.fw-semi-bold {
+  font-weight: var(--fw-semi-bold);
+}
+.fw-bold {
+  font-weight: var(--fw-bold);
+}
+
+/* font-size */
+.fs-100 {
+  font-size: var(--fs-100);
+}
+.fs-200 {
+  font-size: var(--fs-200);
+}
+.fs-300 {
+  font-size: var(--fs-300);
+}
+.fs-400 {
+  font-size: var(--fs-400);
+}
+
+/* transition */
+.ts-400 {
+  transition: var(--ts-400);
+}
+
+.w-ions-size {
+  width: var(--ions-size);
+}
+.h-ions-size {
+  height: var(--ions-size);
+}
+
+.w-card {
+  width: var(--card-w);
+}
+.h-card {
+  height: var(--card-h);
+}
+
+.br-card-100 {
+  border-radius: var(--br-card-100);
+}
+.br-card-200 {
+  border-radius: var(--br-card-200);
+}
+
+.lg-color {
+  background: var(--lg-color);
+}
+
+.boxs-100 {
+  box-shadow: var(--boxs-100);
+}
+.boxs-200 {
+  box-shadow: var(--boxs-200);
+}
+
+.ff-primery {
+  font-family: var(--ff-primery);
+}
+
+/*  */
+
+@media (min-width: 30em) {
+}
+
+body {
+  font-family: var(--ff-primery);
+  font-size: var(--fs-body);
+  color: var(--clr-neutral-200);
+  background-color: var(--clr-accent-300);
+  color: var(--clr-neutral-200);
+  color-scheme: light dark;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+/* Box sizing rules and Remove default margin*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100%;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transition-100s and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
