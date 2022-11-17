@@ -3,9 +3,8 @@ import React from 'react'
 const Footer = ({ route }) => {
   return (
     <footer className=''>
-      <div className='footer-contant'>
-        <h3>Friends Who Enrolled </h3>
-        <h3>Tearms & conditions</h3>
+      <div className='footer-contant txt-primary-100  '>
+        <h3 className='fs-200 fw-semi-bold'>Tearms & conditions</h3>
       </div>
     </footer>
   )

@@ -1,1 +1,22 @@
- 
+/* hrader */
+li {
+  color: var(--clr-primary-300);
+  font-size: var(--fs-200);
+  font-weight: var(--fw-semi-bold);
+}
+li:last-child {
+  color: var(--clr-primary-100);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--size-100);
+}
+
+/* main */
+
+.referral-code h1:last-child {
+  letter-spacing: 1.5em;
+  border: 2px solid var(--lg-color);
+  font-size: var(--fs-200);
+  font-weight: var(--fw-medium);
+}

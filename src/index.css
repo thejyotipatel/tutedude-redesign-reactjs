@@ -34,13 +34,13 @@
 
   --size-100: 0.5em;
   --size-200: 1em;
-  --size-300: 1.5rem;
-  --size-400: 2rem;
-  --size-500: 2.5rem;
-  --size-600: 3rem;
-  --size-700: 3.5rem;
-  --size-800: 4rem;
-  --size-900: 5rem;
+  --size-300: 1.5em;
+  --size-400: 2em;
+  --size-500: 2.5em;
+  --size-600: 3em;
+  --size-700: 3.5em;
+  --size-800: 4em;
+  --size-900: 5em;
 
   --lg-color: linear-gradient(270deg, #800080 0%, #ff864c 100%);
 
@@ -189,21 +189,15 @@
   box-shadow: var(--boxs-200);
 }
 
-.ff-primery {
-  font-family: var(--ff-primery);
-}
-
-/*  */
+/* default styles */
 
 @media (min-width: 30em) {
 }
 
 body {
   font-family: var(--ff-primery);
-  font-size: var(--fs-body);
-  color: var(--clr-neutral-200);
-  background-color: var(--clr-accent-300);
-  color: var(--clr-neutral-200);
+  color: var(--clr-neutral-100);
+  background-color: var(--clr-accent-200);
   color-scheme: light dark;
 }
 html {
@@ -272,4 +266,12 @@ select {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
+}
+
+/* icons style */
+.icons {
+  width: var(--ions-size);
+  height: var(--ions-size);
+  /* background-color: var(--lg-color); */
+  color: var(--lg-color);
 }
