@@ -24,8 +24,10 @@ const Withdraw = () => {
             500
           </span>
         </li>
+        <li>
+          <button className='btn'>Withdraw Balance</button>
+        </li>
       </ul>
-      <button className='btn'>Withdraw Balance</button>
     </div>
   )
 }

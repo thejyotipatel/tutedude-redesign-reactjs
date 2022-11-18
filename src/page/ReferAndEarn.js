@@ -24,21 +24,35 @@ const ReferAndEarn = () => {
 
         <div className='lists-contant'>
           <h1>How does it work ?</h1>
-          {List.map((item) => {
-            const { id, header, text, logo } = item
-            return (
-              <div key={id} className='list'>
-                <span>{logo}</span>
-                <div className='list-text'>
-                  <h1>{header}</h1>
-                  <p>{text}</p>
+          <svg width='0' height='0'>
+            <linearGradient
+              id='blue-gradien'
+              x1='100%'
+              y1='100%'
+              x2='0%'
+              y2='0%'
+            >
+              <stop stopColor='#800080' offset='0%' />
+              <stop stopColor='#ff864c' offset='100%' />
+            </linearGradient>
+          </svg>
+          <div className='lists  '>
+            {List.map((item) => {
+              const { id, header, text, logo } = item
+              return (
+                <div key={id} className='list flex-center'>
+                  <h1 className='icons flex-center'>{logo}</h1>
+                  <div className='list-text'>
+                    <h1>{header}</h1>
+                    <p>{text}</p>
+                  </div>
                 </div>
-              </div>
-            )
-          })}
+              )
+            })}
+          </div>
         </div>
 
-        <Link to={'/friend-referred'} className='fs-200 fw-semi-bold'>
+        <Link className='link' to={'/friend-referred'}>
           Friends Who Enrolled
         </Link>
       </div>

@@ -2,7 +2,7 @@
 :root {
   --clr-accent-100: #ffffff;
   --clr-accent-200: #e5e5e5;
-  --clr-accent-300: #d9d9d940;
+  --clr-accent-300: rgb(218 193 193 / 28%);
 
   --clr-primary-100: #800080;
   --clr-primary-200: #eeaeae;
@@ -26,7 +26,7 @@
   --fs-300: 24px;
   --fs-400: 32px;
 
-  --ions-size: 32px;
+  --icons-size: 32px;
 
   --fs-body: calc(10px + 2vmin);
 
@@ -141,14 +141,6 @@ select {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
-}
-
-/* icons style */
-.icons {
-  width: var(--ions-size);
-  height: var(--ions-size);
-  /* background-color: var(--lg-color); */
-  color: var(--lg-color);
 }
 
 .flex-center {

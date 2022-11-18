@@ -13,10 +13,12 @@ const Header = () => {
           TuteDude
         </div>
         <ul role='list'>
-          <li>My Assignment</li>
-          <li>Chat with Mentor</li>
-          <li className='flex-center'>
-            <span>
+          <li className='dt-no-display'>My Assignment</li>
+          <li className='dt-no-display' s>
+            Chat with Mentor
+          </li>
+          <li className='flex-center profile'>
+            <span className='dt-no-display'>
               <FaUserCircle />
             </span>
             ProfileName

@@ -15,7 +15,7 @@ function App() {
             <div className='dashboard'>
               <Header />
               <Outlet />
-              <Footer />
+              <h3 className='container footer'>Tearms & conditions</h3>
             </div>
           }
         >
