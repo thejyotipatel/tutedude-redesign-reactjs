@@ -7,19 +7,17 @@ import List from '../utils/List'
 
 const ReferAndEarn = () => {
   return (
-    <div className='refer-earn-container'>
+    <main className='container refer-earn-container'>
       <div className='refer-earn-contant'>
-        <div className='url-link'>
-          <p>
-            UI/UX
-            <span>
-              <BiChevronLeft />
-            </span>
-            Refer & Earn
-          </p>
-        </div>
+        <p className='flex-center'>
+          UI/UX
+          <span>
+            <BiChevronLeft />
+          </span>
+          Refer & Earn
+        </p>
 
-        <div className='refere-earn-card'>
+        <div className='refere-earn-card flex-center'>
           <Withdraw />
           <ReferralCode />
         </div>
@@ -44,7 +42,7 @@ const ReferAndEarn = () => {
           Friends Who Enrolled
         </Link>
       </div>
-    </div>
+    </main>
   )
 }
 

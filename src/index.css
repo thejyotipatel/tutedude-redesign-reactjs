@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'); */
 :root {
   --clr-accent-100: #ffffff;
   --clr-accent-200: #e5e5e5;
@@ -47,148 +47,23 @@
   --boxs-100: 0px 2px 8px #80008026;
   --boxs-200: 0px 3px 100px #0000001a;
 
-  --br-card-100: 10px;
-  --br-card-200: 20px;
+  --br-100: 10px;
+  --br-200: 20px;
 
   --card-w: 358px;
   --card-h: 228px;
-  --br-card-100: 10px;
-  --br-card-200: 20px;
 
   --d-border: 2px solid hotpink;
 }
-
-/* utility classes */
-
-/* txt color */
-
-/* txt primary */
-.txt-primary-100 {
-  color: var(--clr-primary-100);
+.bg-lg-color {
+  background-color: var(--lg-color);
 }
-.txt-primary-200 {
-  color: var(--clr-primary-200);
+.clr-lg-color {
+  color: var(--lg-color);
 }
-.txt-primary-300 {
-  color: var(--clr-primary-300);
+* {
+  /* border: var(--d-border); */
 }
-
-/* txt accent */
-.txt-accent-100 {
-  color: var(--clr-accent-100);
-}
-.txt-accent-200 {
-  color: var(--clr-accent-200);
-}
-.txt-accent-300 {
-  color: var(--clr-accent-300);
-}
-
-/* txt neutral */
-.txt-neutral-100 {
-  color: var(--clr-neutral-100);
-}
-.txt-neutral-200 {
-  color: var(--clr-neutral-200);
-}
-
-.txt-neutral-300 {
-  color: var(--clr-neutral-300);
-}
-
-.txt-neutral-400 {
-  color: var(--clr-neutral-400);
-}
-.txt-neutral-500 {
-  color: var(--clr-neutral-500);
-}
-
-/* background color */
-
-/* background primary */
-.bg-primary-100 {
-  background-color: var(--clr-primary-100);
-}
-.bg-primary-300 {
-  background-color: var(--clr-primary-300);
-}
-
-/* background accent */
-.bg-accent-100 {
-  background-color: var(--clr-accent-100);
-}
-.bg-accent-200 {
-  background-color: var(--clr-accent-200);
-}
-.bg-accent-300 {
-  background-color: var(--clr-accent-300);
-}
-
-/* font-weight */
-.fw-regular {
-  font-weight: var(--fw-regular);
-}
-.fw-medium {
-  font-weight: var(--fw-medium);
-}
-.fw-semi-bold {
-  font-weight: var(--fw-semi-bold);
-}
-.fw-bold {
-  font-weight: var(--fw-bold);
-}
-
-/* font-size */
-.fs-100 {
-  font-size: var(--fs-100);
-}
-.fs-200 {
-  font-size: var(--fs-200);
-}
-.fs-300 {
-  font-size: var(--fs-300);
-}
-.fs-400 {
-  font-size: var(--fs-400);
-}
-
-/* transition */
-.ts-400 {
-  transition: var(--ts-400);
-}
-
-.w-ions-size {
-  width: var(--ions-size);
-}
-.h-ions-size {
-  height: var(--ions-size);
-}
-
-.w-card {
-  width: var(--card-w);
-}
-.h-card {
-  height: var(--card-h);
-}
-
-.br-card-100 {
-  border-radius: var(--br-card-100);
-}
-.br-card-200 {
-  border-radius: var(--br-card-200);
-}
-
-.lg-color {
-  background: var(--lg-color);
-}
-
-.boxs-100 {
-  box-shadow: var(--boxs-100);
-}
-.boxs-200 {
-  box-shadow: var(--boxs-200);
-}
-
 /* default styles */
 
 @media (min-width: 30em) {
@@ -274,4 +149,10 @@ select {
   height: var(--ions-size);
   /* background-color: var(--lg-color); */
   color: var(--lg-color);
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

@@ -5,7 +5,7 @@ import ReferralCode from '../components/ReferralCode'
 import CardData from '../utils/CardData'
 const FriendReferred = () => {
   return (
-    <div className='refer-container'>
+    <main className='container refer-container'>
       <div className='refer-contant'>
         <div className='url-link'>
           <p>
@@ -41,7 +41,7 @@ const FriendReferred = () => {
           })}
         </div>
       </div>
-    </div>
+    </main>
   )
 }
 
