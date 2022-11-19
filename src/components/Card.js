@@ -10,11 +10,11 @@ const Card = ({ data }) => {
         </div>
         <div className='card-main'>
           <h3>Courses Enrolled({data.courses.length})</h3>
-          <ul role={'list'} className='flex-center'>
+          <div className='flex-center curses-list'>
             {data.courses.map((item, index) => {
-              return <li key={index}>{item}</li>
+              return <p key={index}>{item}</p>
             })}
-          </ul>
+          </div>
           <h2 className='flex-center'>
             Referral Amount
             <span className='flex-center'>

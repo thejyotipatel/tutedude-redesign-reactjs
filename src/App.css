@@ -28,17 +28,17 @@ header .header-contant {
   justify-content: space-between;
   margin: var(--size-200) 0;
 }
-header .header-contant ul {
+header .header-contant .header-list {
   display: flex;
   gap: var(--size-300);
   font-size: var(--fs-200);
   font-weight: var(--medium);
   color: var(--clr-primary-300);
 }
-header .header-contant ul li:last-child span {
+header .header-contant .header-list a:last-child span {
   font-size: var(--fs-300);
 }
-header .header-contant ul li:last-child {
+header .header-contant .header-list a:last-child {
   color: var(--clr-primary-100);
 
   gap: var(--size-100);
@@ -72,7 +72,7 @@ header .header-contant ul li:last-child {
   box-shadow: var(--boxs-200);
   text-align: center;
 }
-.withdraw ul {
+.withdraw .withdraw-list {
   color: var(--clr-primary-100);
   font-size: var(--fs-200);
   font-weight: var(--fw-medium);
@@ -82,12 +82,15 @@ header .header-contant ul li:last-child {
   justify-content: space-evenly;
   align-items: center;
 }
-.withdraw ul li span {
+.withdraw .withdraw-list p {
+  margin: 0;
+}
+.withdraw .withdraw-list p span {
   display: flex;
   align-items: center;
   justify-content: flex-start;
 }
-.withdraw ul li span {
+.withdraw .withdraw-list p span {
   color: var(--clr-neutral-100);
   font-size: var(--fs-400);
 }
@@ -337,12 +340,13 @@ header .header-contant ul li:last-child {
   color: var(--clr-accent-100);
   font-weight: var(--fw-medium);
 }
-.cards .card .card-contant .card-main ul {
+.cards .card .card-contant .card-main .curses-list {
   flex-wrap: wrap;
   justify-content: flex-start;
   gap: 0.6em;
 }
-.cards .card .card-contant .card-main ul li {
+.cards .card .card-contant .card-main .curses-list p {
+  margin: 0;
   color: var(--clr-accent-100);
   padding: 0.2em var(--size-100);
   border: 2px solid var(--clr-accent-100);
@@ -387,6 +391,7 @@ header .header-contant ul li:last-child {
     flex-direction: column;
     height: fit-content;
     overflow-x: unset;
+    align-items: center;
   }
 
   .cards .card {

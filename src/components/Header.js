@@ -12,10 +12,10 @@ const Header = () => {
           </span>
           TuteDude
         </div>
-        <ul role='list'>
-          <li className='dt-no-display'>My Assignment</li>
-          <li className='dt-no-display'>Chat with Mentor</li>
-          <li className='flex-center profile'>
+        <div className='header-list'>
+          <a className='dt-no-display'>My Assignment</a>
+          <a className='dt-no-display'>Chat with Mentor</a>
+          <a className='flex-center profile'>
             <span className='dt-no-display'>
               <FaUserCircle />
             </span>
@@ -23,8 +23,8 @@ const Header = () => {
             <span>
               <BiChevronDown />
             </span>
-          </li>
-        </ul>
+          </a>
+        </div>
       </div>
     </header>
   )
