@@ -35,10 +35,10 @@ header .header-contant .header-list {
   font-weight: var(--medium);
   color: var(--clr-primary-300);
 }
-header .header-contant .header-list a:last-child span {
+header .header-contant .header-list p:last-child span {
   font-size: var(--fs-300);
 }
-header .header-contant .header-list a:last-child {
+header .header-contant .header-list p:last-child {
   color: var(--clr-primary-100);
 
   gap: var(--size-100);

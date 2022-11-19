@@ -13,9 +13,9 @@ const Header = () => {
           TuteDude
         </div>
         <div className='header-list'>
-          <a className='dt-no-display'>My Assignment</a>
-          <a className='dt-no-display'>Chat with Mentor</a>
-          <a className='flex-center profile'>
+          <p className='dt-no-display'>My Assignment</p>
+          <p className='dt-no-display'>Chat with Mentor</p>
+          <p className='flex-center profile'>
             <span className='dt-no-display'>
               <FaUserCircle />
             </span>
@@ -23,7 +23,7 @@ const Header = () => {
             <span>
               <BiChevronDown />
             </span>
-          </a>
+          </p>
         </div>
       </div>
     </header>
