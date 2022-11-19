@@ -1,27 +1,26 @@
-import React from 'react'
 import { BiRupee } from 'react-icons/bi'
 
 const Card = ({ data }) => {
   return (
-    <div className='card lg-color '>
+    <div className='card '>
       <div className='card-contant'>
-        <div className='card-header'>
+        <div className='card-header flex-center'>
           <h1>{data.header}</h1>
           <p> {data.date}</p>
         </div>
         <div className='card-main'>
-          <h3>Courses Enrolled({data.length})</h3>
-          <ul>
+          <h3>Courses Enrolled({data.courses.length})</h3>
+          <ul role={'list'} className='flex-center'>
             {data.courses.map((item, index) => {
               return <li key={index}>{item}</li>
             })}
           </ul>
-          <h2>
+          <h2 className='flex-center'>
             Referral Amount
-            <span>
+            <span className='flex-center'>
               <BiRupee />
+              {data.amount}
             </span>
-            {data.amount}
           </h2>
         </div>
       </div>

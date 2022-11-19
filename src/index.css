@@ -1,8 +1,9 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 :root {
   --clr-accent-100: #ffffff;
   --clr-accent-200: #e5e5e5;
-  --clr-accent-300: rgb(218 193 193 / 28%);
+  --clr-accent-300: #dac1c147;
 
   --clr-primary-100: #800080;
   --clr-primary-200: #eeaeae;
@@ -27,9 +28,6 @@
   --fs-400: 32px;
 
   --icons-size: 32px;
-
-  --fs-body: calc(10px + 2vmin);
-
   --ts-400: all 0.2s linear;
 
   --size-100: 0.5em;
@@ -55,19 +53,7 @@
 
   --d-border: 2px solid hotpink;
 }
-.bg-lg-color {
-  background-color: var(--lg-color);
-}
-.clr-lg-color {
-  color: var(--lg-color);
-}
-* {
-  /* border: var(--d-border); */
-}
 /* default styles */
-
-@media (min-width: 30em) {
-}
 
 body {
   font-family: var(--ff-primery);

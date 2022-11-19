@@ -3,23 +3,23 @@ import { BiRupee } from 'react-icons/bi'
 const Withdraw = () => {
   return (
     <div className=' withdraw'>
-      <ul role='list' className='flex-center'>
+      <ul role='list' className=' '>
         <li>
           Referral Earning
-          <span className='flex-center'>
+          <span>
             <BiRupee />
             2,500
           </span>
         </li>
         <li>
           Total Referrals
-          <span className='flex-center'>
+          <span>
             <BiRupee />7
           </span>
         </li>
         <li>
           Wallet Balance
-          <span className='flex-center'>
+          <span>
             <BiRupee />
             500
           </span>

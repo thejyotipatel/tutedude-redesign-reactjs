@@ -3,7 +3,6 @@ import { BrowserRouter, Outlet, Route, Routes } from 'react-router-dom'
 import ReferAndEarn from './page/ReferAndEarn'
 import FriendReferred from './page/FriendReferred'
 import Header from './components/Header'
-import Footer from './components/Footer'
 
 function App() {
   return (

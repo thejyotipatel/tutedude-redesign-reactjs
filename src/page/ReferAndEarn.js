@@ -1,7 +1,6 @@
 import React from 'react'
 import { BiChevronLeft } from 'react-icons/bi'
 import { Link } from 'react-router-dom'
-import ReferralCode from '../components/ReferralCode'
 import Withdraw from '../components/Withdraw'
 import List from '../utils/List'
 
@@ -19,7 +18,10 @@ const ReferAndEarn = () => {
 
         <div className='refere-earn-card flex-center'>
           <Withdraw />
-          <ReferralCode />
+          <div className='referral-code flex-center '>
+            <h1 className=''>Your Referral Code</h1>
+            <h1> E D C H 5 4</h1>
+          </div>
         </div>
 
         <div className='lists-contant'>

@@ -14,9 +14,7 @@ const Header = () => {
         </div>
         <ul role='list'>
           <li className='dt-no-display'>My Assignment</li>
-          <li className='dt-no-display' s>
-            Chat with Mentor
-          </li>
+          <li className='dt-no-display'>Chat with Mentor</li>
           <li className='flex-center profile'>
             <span className='dt-no-display'>
               <FaUserCircle />

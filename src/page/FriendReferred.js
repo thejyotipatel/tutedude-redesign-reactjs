@@ -1,31 +1,37 @@
-import { BiChevronLeft, BiRupee } from 'react-icons/bi'
+import { BiChevronLeft, BiRupee, BiArrowBack } from 'react-icons/bi'
 import { Link } from 'react-router-dom'
 import Card from '../components/Card'
-import ReferralCode from '../components/ReferralCode'
 import CardData from '../utils/CardData'
+
 const FriendReferred = () => {
   return (
     <main className='container refer-container'>
       <div className='refer-contant'>
-        <div className='url-link'>
-          <p>
-            UI/UX
-            <span>
-              <BiChevronLeft />
-            </span>
-            <Link to={'/'}> Refer & Earn</Link>
-            <span>
-              <BiChevronLeft />
-            </span>
-            Friends Referred
-          </p>
-        </div>
-
+        <p className='flex-center '>
+          UI/UX
+          <span>
+            <BiChevronLeft />
+          </span>
+          Refer & Earn
+          <span>
+            <BiChevronLeft />
+          </span>
+          Friends Referred
+        </p>
+        <Link to={'/'} className='flex-center go-back  '>
+          <span>
+            <BiArrowBack />
+          </span>
+          go back
+        </Link>
         <div className='refer-code'>
-          <ReferralCode />
-          <div className='wallet-balance'>
+          <div className='refer-code-contant'>
+            <h2>Your Referral Code </h2>
+            <p>EDCH54</p>
+          </div>
+          <div className='  wallet-bal'>
             <p>Wallet Balance</p>
-            <h1>
+            <h1 className=' '>
               <span>
                 <BiRupee />
               </span>
@@ -33,12 +39,13 @@ const FriendReferred = () => {
             </h1>
           </div>
         </div>
-
         <div className='cards'>
           <h1>Friends who enrolled(3)</h1>
-          {CardData.map((data) => {
-            return <Card key={data.id} data={data} />
-          })}
+          <div className='cards-contant'>
+            {CardData.map((data) => {
+              return <Card key={data.id} data={data} />
+            })}
+          </div>
         </div>
       </div>
     </main>
